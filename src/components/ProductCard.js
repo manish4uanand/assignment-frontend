@@ -11,6 +11,7 @@ import TextField from '@material-ui/core/TextField'
 import Grid from '@material-ui/core/Grid';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { useHistory } from 'react-router-dom';
+import ExportExcel from './ExportExcel';
  
 const useStyles = makeStyles( theme => ({
   paper: {
@@ -102,6 +103,7 @@ export default function ProductCard({products}) {
 
   return (
     <>
+      <ExportExcel products={filterProducts}/>
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
 
