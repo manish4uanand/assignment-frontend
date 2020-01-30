@@ -15,6 +15,7 @@ import SignUp from './views/SignUp';
 import Dashboard from './views/Dashboard';
 import NotFound from './views/NotFound';
 import SignIn from './views/SignIn';
+import ProductShow from './views/ProductShow';
 import { Box } from '@material-ui/core'
 
 
@@ -38,6 +39,7 @@ class App extends Component {
           <Box className={classes.root}>
             <Switch>
               <PrivateRoute exact path="/" component={Dashboard} token={token}/>
+              <PrivateRoute exact path="/products/:id" component={ProductShow} token={token}/>
               <Route exact path="/sign-in" component={SignIn} />
               <Route exact path="/sign-up" component={SignUp}/>
               <Route component={NotFound} />
