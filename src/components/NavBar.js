@@ -34,6 +34,7 @@ export default function NavBar({ auth }) {
         <Toolbar>
           <Box display={{ xs: 'none', sm: 'block' }}>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+              <Link to="/">Home</Link>
             </IconButton>
           </Box>
             <Typography variant="h6" className={classes.title}>
