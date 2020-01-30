@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const HOST_URL = "http://localhost:3001";
+const HOST_URL = "https://assignment-api-backend.herokuapp.com";
 
 
 // configure an axios instance
